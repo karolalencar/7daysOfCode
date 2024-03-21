@@ -1,3 +1,9 @@
+:root {
+    --title-color: #101828;
+    --text-color: #667085;
+    --primary-color: #8E2424;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +11,7 @@
     font-family: 'Inter', sans-serif;
 }
 
-/*  Cabeçalho  */
+/*  Navbar */
 
 nav {
     display: flex;
@@ -41,7 +47,7 @@ ul {
 }
 
 li {
-    color: #667085;
+    color: var(--text-color);
 }
 
 div.buttons {
@@ -62,7 +68,7 @@ a.link-nav {
 
     font-size: 16px;
     line-height: 24px;
-    color:  #667085;
+    color:  var(--text-color);
 }
 
 button.btn-nav {
@@ -71,8 +77,46 @@ button.btn-nav {
     border: none;
 
     color: #fff;
-    background-color: #8E2424;
+    background-color: var(--primary-color);
 
     font-size: 16px;
     line-height: 24px;
+}
+
+/*  Cabeçalho  */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+    height: 408px;
+}
+
+header span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: var(--primary-color);
+}
+
+header h1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+
+    color: var(--title-color);
+}
+
+header  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    width: 792px;
+
+    color: var(--text-color);
 }
