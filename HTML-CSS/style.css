@@ -83,7 +83,7 @@ button.btn-nav {
     line-height: 24px;
 }
 
-/*  Cabeçalho  */
+/*  Header section  */
 
 header {
     display: flex;
@@ -119,4 +119,43 @@ header  p {
     width: 792px;
 
     color: var(--text-color);
+}
+
+/*  Metrics section  */
+
+.metrics-container {
+    display: flex;
+    justify-content: space-between;
+
+    height: 288px;
+    padding: 0 6.2% 96px 6.2%;
+}
+
+.metrics-item span {
+    color: var(--primary-color);
+
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 72px;
+
+    margin-bottom: 12px;
+} 
+
+.metrics-item h1 {
+    color: var(--title-color);
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+
+    margin-bottom: 8px;
+}
+
+.metrics-item p {
+    color: var(--text-color);
+
+    font-size: 16px;
+    font-weight: 400;
+
+    width: 280px;
 }
