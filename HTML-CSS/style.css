@@ -166,6 +166,7 @@ header  p {
 .jobs-container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .intro {
@@ -206,4 +207,50 @@ header  p {
 
     width: 768px;
     margin-bottom: 64px;
+}
+
+.jobs {
+    width: 768px;
+    margin: 0 auto 96px auto;
+}
+
+.jobs h2 {
+    color: var(--title-color);
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+
+    margin-top: 64px;
+    margin-bottom: 32px;
+}
+
+.job {
+    display: flex;
+    flex-direction: column;
+
+    width: 768px;
+    height: 136px;
+    padding: 24px 24px 28px 24px;
+    margin-bottom: 24px;
+    gap: 24px;
+    border: 1px solid #EAECF0;
+    border-radius: 16px;
+}
+
+.job h3 {
+    color: var(--title-color);
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.job span {
+    color: var(--text-color);
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-right: 24px;
 }
